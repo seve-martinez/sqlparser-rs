@@ -53,7 +53,7 @@ impl Dialect for SnowflakeDialect {
             || ch == '_'
     }
 
-    // See https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical#escape_sequences
+    // See https://docs.snowflake.com/en/sql-reference/data-types-text#escape-sequences-in-single-quoted-string-constants
     fn supports_string_literal_backslash_escape(&self) -> bool {
         true
     }
